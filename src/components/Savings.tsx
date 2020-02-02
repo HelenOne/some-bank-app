@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Savings.css";
 import "../App.css";
+import separateWithCommas from "../commasSeparationFunction";
 
 type SavingsDescription = {
   key: string;
@@ -43,7 +44,9 @@ export default class Savings extends React.Component {
         {savingsDescription.map((savingsElement, index) => {
           return (
             <div className="savings-block">
-              <div className="savings-amount">£{savingsElement.amount}</div>
+              <div className="savings-amount">
+                £{separateWithCommas(savingsElement.amount)}
+              </div>
               <div className="savings-label">{savingsElement.label}</div>
               <div
                 className={(() => {
