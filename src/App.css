@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.fixedPart {
+  position: fixed;
+  height: 100vh;
+}
+
+body {
+  background-color: #fcfafd;
+  font-family: "Roboto", sans-serif;
+}
+.scrollPart {
+  padding-left: 300px;
+  padding-right: 20px;
+  padding-top: 10px;
+}

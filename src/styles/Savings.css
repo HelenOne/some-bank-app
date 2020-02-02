@@ -1,0 +1,42 @@
+.savings {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.savings-block {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.savings-amount {
+  /* margin-bottom: 2px; */
+  font-size: 1.5em;
+}
+.savings-label {
+  color: #b4bbc3;
+}
+.savings-percent {
+  display: inline-flex;
+  align-items: center;
+}
+.savings-percent.positive {
+  color: #01b075;
+  fill: #01b075;
+}
+.savings-percent.positive svg {
+  transform: rotate(-45deg);
+}
+.savings-percent.negative {
+  color: #f31d1d;
+  fill: #f31d1d;
+}
+.savings-percent.negative svg {
+  transform: rotate(45deg);
+}
+.savings-percent.zero {
+  color: #b4bbc3;
+  fill: #b4bbc3;
+}
