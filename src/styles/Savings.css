@@ -40,3 +40,7 @@
   color: #b4bbc3;
   fill: #b4bbc3;
 }
+/* .savings-block:not(:last-child) {
+  border-right: solid 1.5px #979797;
+  padding-right: 20px;
+} */
