@@ -22,3 +22,10 @@ body {
 .centralPart {
   padding-top: 40px;
 }
+.transactions {
+  width: 60%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
