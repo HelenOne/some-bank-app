@@ -3,14 +3,22 @@
 .fixedPart {
   position: fixed;
   height: 100vh;
+  display: inline-block;
 }
 
 body {
   background-color: #fcfafd;
   font-family: "Roboto", sans-serif;
+  position: fixed;
 }
 .scrollPart {
   padding-left: 300px;
   padding-right: 20px;
   padding-top: 10px;
+  height: 100vh;
+  width: calc(100vw - 300px);
+  display: inline-block;
+}
+.centralPart {
+  padding-top: 40px;
 }
