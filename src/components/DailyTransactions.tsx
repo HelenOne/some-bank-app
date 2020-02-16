@@ -44,7 +44,7 @@ export default class DailyTransactions extends React.Component {
                     className={(() => {
                       if (transaction.rising) {
                         return "arrow positive";
-                      } else if (transaction.rising == false) {
+                      } else if (transaction.rising === false) {
                         return "arrow negative";
                       } else {
                         return "arrow zero";
