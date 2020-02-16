@@ -1,0 +1,51 @@
+.transactions-block
+    width: calc(100% - 40px);
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px 5px 0 0;
+    .transaction
+        display: inline-flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        .title
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            .arrow-wrapper
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 45px;
+                width: 45px;
+                background-color: #F6F7F9;
+                border-radius: 5px;
+                .arrow.positive
+                    fill: #01b075;
+                    transform: rotate(-45deg);
+                .arrow.negative
+                    fill: #f31d1d;
+                    transform: rotate(45deg);
+                .arrow.zero
+                    fill: #b4bbc3;
+            .text
+                display: inline-flex;
+                flex-direction: column;
+                padding-left: 20px;
+                .date
+                    color: #B4BBC3;
+        .amount
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+.chart-block
+    height: 260px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white
+    svg
+        border-left: solid black 1px;
+        border-bottom: solid black 1px

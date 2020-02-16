@@ -43,34 +43,39 @@ export default class Savings extends React.Component {
       <div className="savings">
         {savingsDescription.map((savingsElement, index) => {
           return (
-            <div className="savings-block">
-              <div className="savings-amount">
-                £{separateWithCommas(savingsElement.amount)}
-              </div>
-              <div className="savings-label">{savingsElement.label}</div>
-              <div
-                className={(() => {
-                  if (savingsElement.percent > 0) {
-                    return "savings-percent positive";
-                  } else if (savingsElement.percent < 0) {
-                    return "savings-percent negative";
-                  } else {
-                    return "savings-percent zero";
-                  }
-                })()}
-              >
-                <svg
-                  className="arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  width="16"
+            <React.Fragment>
+              <div className="savings-block">
+                <div className="savings-amount">
+                  £{separateWithCommas(savingsElement.amount)}
+                </div>
+                <div className="savings-label">{savingsElement.label}</div>
+                <div
+                  className={(() => {
+                    if (savingsElement.percent > 0) {
+                      return "savings-percent positive";
+                    } else if (savingsElement.percent < 0) {
+                      return "savings-percent negative";
+                    } else {
+                      return "savings-percent zero";
+                    }
+                  })()}
                 >
-                  <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
-                </svg>
-                {Math.abs(savingsElement.percent).toFixed(2)}%
+                  <svg
+                    className="arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    width="16"
+                  >
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                  </svg>
+                  {Math.abs(savingsElement.percent).toFixed(2)}%
+                </div>
               </div>
-            </div>
+              {index !== savingsDescription.length - 1 && (
+                <div className="line" />
+              )}
+            </React.Fragment>
           );
         })}
       </div>
